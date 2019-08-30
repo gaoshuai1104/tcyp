@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     <div class="left">
-      <img src="../../../static/bg.jpg" class />
+      <img src="../../../static/timg.jpg" class />
     </div>
     <div class="right">
-      <h2>中国浦东干部管理学院</h2>
-      <span>BIM.FM运营管理平台</span>
+      <h2>汤臣一品 BIM.FM运营管理平台</h2>
+      <!-- <span>BIM.FM运营管理平台</span> -->
       <div class="user">
         <el-input placeholder="请输入用户名" v-model="username" clearable></el-input>
       </div>
@@ -14,7 +14,7 @@
         <el-checkbox v-model="checked">记住我</el-checkbox>
       </div>
       <button class="but" @click="lond">登陆</button>
-      <span>@Arcplus Surbana Jurong Digital Ltd</span>
+      <!-- <span>@Arcplus Surbana Jurong Digital Ltd</span> -->
     </div>
   </div>
 </template>
@@ -41,9 +41,12 @@ export default {
 <style lang="less" scoped>
 .left {
   img {
+    padding: 0;
+    margin: 0;
     width: 60%;
     height: 100%;
     position: absolute;
+    top: 0;
     left: 0;
   }
 }
