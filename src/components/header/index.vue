@@ -1,8 +1,8 @@
 <template>
 <div>
   <div id="logo">
-    <img class="pty" src="../../../static/pty.png" alt="">
-     <h3>中国浦东干部管理学院欢迎您!</h3>
+    <img class="pty" src="../../../static/pty.jpg" alt="">
+     <h3>汤臣一品欢迎您!</h3>
   </div>
   <el-menu
     id="bg-top"
@@ -10,53 +10,55 @@
     class="el-menu-demo"
     mode="horizontal"
     @select="handleSelect"
-    background-color="#59A8FB"
+    background-color="rgb(84, 92, 100)"
     text-color="#fff"
     active-text-color="#ffd04b"
   >
-  <el-menu-item index="1"><i class="el-icon-s-cooperation"></i>采购管理</el-menu-item>
-  <el-menu-item index="3"><i class="el-icon-s-cooperation"></i>平安校园</el-menu-item>
-    <el-submenu index="2">
-    <template slot="title"><i class="el-icon-s-cooperation"></i>资产管理</template>
-    <el-menu-item index="2-1">资产台账</el-menu-item>
-    <el-menu-item index="2-2">资产卡片</el-menu-item>
-    <el-menu-item index="2-3">资产空间分布</el-menu-item>
-    <el-menu-item index="2-4">资产查询盘点</el-menu-item>
-    <el-menu-item index="2-5">资产关联影响</el-menu-item>
-    <el-menu-item index="2-6">资产预算管理</el-menu-item>
-    <el-menu-item index="2-7">资产成本分析</el-menu-item>
+      <el-submenu index="1">
+    <template slot="title"><i class="el-icon-s-cooperation" @click="$router.push({ path:'Apply'})"></i>平安住区</template>
+    <el-menu-item index="1-1">智慧门禁</el-menu-item>
+    <el-menu-item index="1-2">安防监控</el-menu-item>
+    <el-menu-item index="1-3">小区导引</el-menu-item>
+    <el-menu-item index="1-4">异情分析</el-menu-item>
+    <el-menu-item index="1-5">应急模拟</el-menu-item>
+    </el-submenu>
+      <el-submenu index="2">
+    <template slot="title"><i class="el-icon-s-cooperation" @click="$router.push({ path:'Admission'})"></i>贵宾支持</template>
+    <el-menu-item index="2-1">到达提醒</el-menu-item>
+    <el-menu-item index="2-2">主动服务</el-menu-item>
+    </el-submenu>
+    
+          <el-submenu index="3">
+    <template slot="title"><i class="el-icon-s-cooperation"></i>绿色住区</template>
+    <el-menu-item index="3-1">垃圾管理</el-menu-item>
+    <el-menu-item index="3-2">绿植管理</el-menu-item>
     </el-submenu>
     <el-submenu index="4">
-    <template slot="title"><i class="el-icon-s-cooperation"></i>设备运维</template>
-    <el-menu-item index="4-1">设备状态指标</el-menu-item>
-    <el-menu-item index="4-2">故障维修</el-menu-item>
-    <el-menu-item index="4-3">计划性维护</el-menu-item>
-    <el-menu-item index="4-4">预防性维护</el-menu-item>
-    <el-menu-item index="4-5">设备维护电子档案</el-menu-item>
-    <el-menu-item index="4-6">运维费用统计</el-menu-item>
-    <el-menu-item index="4-7">模拟演示</el-menu-item>
+    <template slot="title"><i class="el-icon-s-cooperation"></i>资产管理</template>
+    <el-menu-item index="4-1">物业资产台账</el-menu-item>
+    <el-menu-item index="4-2">资产卡片</el-menu-item>
+    <el-menu-item index="4-3">资产空间分布</el-menu-item>
+    <el-menu-item index="4-4">资产查询盘点</el-menu-item>
+    <el-menu-item index="4-5">资产关联影响</el-menu-item>
+    <el-menu-item index="4-6">资产预算管理</el-menu-item>
+    <el-menu-item index="4-7">资产成本分析</el-menu-item>
     </el-submenu>
     <el-submenu index="5">
-    <template slot="title"><i class="el-icon-s-cooperation"></i>绿色校园</template>
-    <el-menu-item index="5-1">能效管理</el-menu-item>
-    <el-menu-item index="5-2">绿色建筑</el-menu-item>
-    <el-menu-item index="5-3">垃圾管理</el-menu-item>
-    <el-menu-item index="5-4">绿植管理</el-menu-item>
+    <template slot="title"><i class="el-icon-s-cooperation"></i>设备运维</template>
+    <el-menu-item index="5-1">设备状态指标</el-menu-item>
+    <el-menu-item index="5-2">故障维修</el-menu-item>
+    <el-menu-item index="5-3">计划性维护</el-menu-item>
+    <el-menu-item index="5-4">预防性维护</el-menu-item>
+    <el-menu-item index="5-5">设备维护电子档案</el-menu-item>
+    <el-menu-item index="5-6">运维费用统计</el-menu-item>
     </el-submenu>
-        <el-submenu index="6">
-    <template slot="title"><i class="el-icon-s-cooperation"></i>停车管理</template>
-    <el-menu-item index="6-1">车位信息</el-menu-item>
-    <el-menu-item index="6-2">车位引导</el-menu-item>
-    <el-menu-item index="6-3">电子支付</el-menu-item>
-    <el-menu-item index="6-4">车库运行统计</el-menu-item>
-    <el-menu-item index="6-5">异常车辆识别</el-menu-item>
-    </el-submenu>
-            <el-submenu index="7">
+    <el-submenu index="6">
     <template slot="title"><i class="el-icon-s-cooperation"></i>空间管理</template>
-    <el-menu-item index="7-1">空间清册</el-menu-item>
-    <el-menu-item index="7-2">空间查询</el-menu-item>
-    <el-menu-item index="7-3">空间占用</el-menu-item>
-    <el-menu-item index="7-4">费用分摊</el-menu-item>
+    <el-menu-item index="6-1">空间创收</el-menu-item>
+    <el-menu-item index="6-2">空间清册</el-menu-item>
+    <el-menu-item index="6-3">空间查询</el-menu-item>
+    <el-menu-item index="6-4">空间占用</el-menu-item>
+    <el-menu-item index="6-4">费用分摊</el-menu-item>
     </el-submenu>
   </el-menu>
   </div>
@@ -131,7 +133,8 @@ export default {
   }
 }
 .pty{
-  height: 40px;
+  width: 90px;
+  height: 50px;
   float: left;
 }
 .righ{

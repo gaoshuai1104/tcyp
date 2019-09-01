@@ -15,10 +15,10 @@
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-menu"></i>
-          <span>出入管理</span>
+          <span>智慧门禁</span>
         </template>
         <div class="child">
-        <el-menu-item-group>
+      <el-menu-item-group>
       <el-menu-item index="/Admission">入校登记</el-menu-item>
       <el-menu-item index="/Leavingschool">离校登记</el-menu-item>
       <el-menu-item index="/list">访客列表</el-menu-item>
@@ -26,12 +26,12 @@
       </el-menu-item-group>
       </div>
       </el-submenu>
-      <el-menu-item index="2">
+      <!-- <el-menu-item index="2">
         <template slot="title">
           <i class="el-icon-menu"></i>
           <span>智慧门禁</span>
         </template>
-      </el-menu-item>
+      </el-menu-item> -->
       <!-- <el-menu-item disabled index="/Receivinggoods">
         <i class="el-icon-menu"></i>
         <span slot="title">收货管理</span>

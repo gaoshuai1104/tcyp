@@ -15,12 +15,14 @@
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-menu"></i>
-          <span>采购申请管理</span>
+          <span>智慧门禁</span>
         </template>
         <div class="child">
-        <el-menu-item-group>
-      <el-menu-item index="/Apply">采购申请输入</el-menu-item>
-      <el-menu-item index="/query">采购申请查询</el-menu-item>
+      <el-menu-item-group>
+      <el-menu-item index="/Admission">进入登记</el-menu-item>
+      <el-menu-item index="/Leavingschool">离开登记</el-menu-item>
+      <el-menu-item index="/list">访客列表</el-menu-item>
+      <el-menu-item index="/information">访客信息</el-menu-item>
       </el-menu-item-group>
       </div>
       </el-submenu>
@@ -28,7 +30,7 @@
       <el-submenu index="2">
         <template slot="title">
           <i class="el-icon-menu"></i>
-          <span>采购订单管理</span>
+          <span>安防监控</span>
         </template>
         <div class="child">
             <el-menu-item-group>
@@ -44,7 +46,7 @@
       <el-submenu index="4">
         <template slot="title">
           <i class="el-icon-menu"></i>
-          <span>采购入库管理</span>
+          <span>小区导引</span>
         </template>
         <div class="child">
         <el-menu-item-group>
@@ -55,20 +57,20 @@
       </el-submenu>
       <el-menu-item index="5">
         <i class="el-icon-menu"></i>
-        <span slot="title">开支分析管理</span>
+        <span slot="title">异情分析</span>
       </el-menu-item>
       <el-menu-item index="6">
         <i class="el-icon-menu"></i>
-        <span slot="title">预算分析管理</span>
+        <span slot="title">应急模拟</span>
       </el-menu-item>
-      <el-menu-item index="7">
+      <!-- <el-menu-item index="7">
         <i class="el-icon-menu"></i>
         <span slot="title">财务协同管理</span>
       </el-menu-item>
             <el-menu-item index="8">
         <i class="el-icon-menu"></i>
         <span slot="title">供应商管理</span>
-      </el-menu-item>
+      </el-menu-item> -->
     </el-menu>
   </el-col>
 </el-row>
