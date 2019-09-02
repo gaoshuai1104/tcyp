@@ -1,21 +1,21 @@
 <template>
     <div class="bg">
         <el-col :span="8">
-    <el-autocomplete
+    <!-- <el-autocomplete
       class="inline-input"
       v-model="state1"
       :fetch-suggestions="querySearch"
       placeholder="请输入起点"
       :trigger-on-focus="false"
       @select="handleSelect"
-    ></el-autocomplete>
+    ></el-autocomplete> -->
   </el-col>
   <el-col :span="8">
     <el-autocomplete
       class="inline-input"
       v-model="state2"
       :fetch-suggestions="querySearch"
-      placeholder="请输入终点"
+      placeholder="请输入到达地点"
       :trigger-on-focus="false"
       @select="handleSelect"
     ></el-autocomplete>

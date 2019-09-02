@@ -12,6 +12,20 @@
             <div id="main2" style="float:right;width:500px;height: 300px"></div>
         </div>
     </div>
+    <div class="inp">
+      <span class="fl">原因分析 :</span>
+      <div class="input">
+      <el-input
+  type="textarea"
+  :rows="3"
+  placeholder="请输入原因分析"
+  v-model="textarea">
+</el-input>
+<div class="but">
+  <el-button type="primary" round>提交</el-button>
+</div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -83,7 +97,7 @@
           },
           series : [
               {
-                  name: '访问来源',
+                  name: '异情类型',
                   type: 'pie',
                   radius : '55%',
                   center: ['50%', '60%'],
@@ -112,7 +126,7 @@
     }
   }
 </script>
-<style scoped>
+<style lang="less" scoped>
   #chart_example{
     width: 50%;
     height: 500px;
@@ -130,5 +144,18 @@
     float: left;
     margin-top: 10px;
     margin-left: 220px;
+  }
+  .inp{
+    margin-top: 40px;
+    .input{
+      width: 40%;
+      margin-left: 6%;
+    }
+    .fl{
+      float: left;
+    }
+    .but{
+      margin-top: 20px;
+    }
   }
 </style>
