@@ -152,6 +152,24 @@ export default new Router({
           },
         },
         {
+          path: '/Security',
+          name: 'Security',
+          component: () => import('./views/purchase/Security.vue'),
+          meta:{
+            keepAlive: true,
+            title:'安防监控',
+          },
+        },
+        {
+          path: '/Guidance',
+          name: 'Guidance',
+          component: () => import('./views/purchase/Guidance.vue'),
+          meta:{
+            keepAlive: true,
+            title:'小区导引',
+          },
+        },
+        {
           path: '/emergencies',
           name: 'emergencies',
           component: () => import('./views/purchase/emergencies.vue'),

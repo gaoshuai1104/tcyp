@@ -6,10 +6,12 @@ import axios from '../node_modules/axios'
 import $ from 'jquery'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+// import echarts from 'echarts'
 // import * as THREE from 'three'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
+// Vue.use(echarts)
 // Vue.use(THREE)
 Vue.prototype.$axios = axios;
 

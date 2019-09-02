@@ -33,7 +33,7 @@ export default {
   // },
   methods: {
     lond() {
-      this.$router.push({ name: "Apply" });
+      this.$router.push({ name: "Admission" });
     }
   }
 };

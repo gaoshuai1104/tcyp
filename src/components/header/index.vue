@@ -15,7 +15,7 @@
     active-text-color="#ffd04b"
   >
       <el-submenu index="1">
-    <template slot="title"><i class="el-icon-s-cooperation" @click="$router.push({ path:'Apply'})"></i>平安住区</template>
+    <template slot="title"><i class="el-icon-s-cooperation" @click="$router.push({ path:'Admission'})"></i>平安住区</template>
     <el-menu-item index="1-1">智慧门禁</el-menu-item>
     <el-menu-item index="1-2">安防监控</el-menu-item>
     <el-menu-item index="1-3">小区导引</el-menu-item>

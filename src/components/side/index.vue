@@ -27,23 +27,23 @@
       </div>
       </el-submenu>
 
-      <el-submenu index="2">
+      <el-submenu index="/Security">
         <template slot="title">
           <i class="el-icon-menu"></i>
           <span>安防监控</span>
         </template>
         <div class="child">
-            <el-menu-item-group>
+            <!-- <el-menu-item-group>
       <el-menu-item index="/OrderApply" >输入采购订单</el-menu-item>
       <el-menu-item index="/Orderquery" >采购订单列表</el-menu-item>
-      </el-menu-item-group>
+      </el-menu-item-group> -->
       </div>
       </el-submenu>
       <!-- <el-menu-item disabled index="/Receivinggoods">
         <i class="el-icon-menu"></i>
         <span slot="title">收货管理</span>
       </el-menu-item> -->
-      <el-submenu index="4">
+      <el-submenu index="/Guidance">
         <template slot="title">
           <i class="el-icon-menu"></i>
           <span>小区导引</span>
@@ -112,7 +112,7 @@
 .el-table{
   border: 1px solid rgb(84, 92, 100); 
 }
-.el-menu-item-group__title{
+.tac .el-menu-item-group__title{
       background-color: rgb(84, 92, 100);
 }
 .child{

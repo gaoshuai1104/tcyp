@@ -32,17 +32,17 @@
           <span>智慧门禁</span>
         </template>
       </el-menu-item> -->
-      <!-- <el-menu-item disabled index="/Receivinggoods">
-        <i class="el-icon-menu"></i>
-        <span slot="title">收货管理</span>
-      </el-menu-item> -->
-      <el-menu-item index="4">
+      <el-menu-item index="/Security">
         <template slot="title">
           <i class="el-icon-menu"></i>
           <span>安防监控</span>
         </template>
       </el-menu-item>
-      <el-menu-item index="5">
+            <el-menu-item index="/Guidance">
+        <i class="el-icon-menu"></i>
+        <span slot="title">小区导引</span>
+      </el-menu-item>
+      <el-menu-item index="/analyze">
         <i class="el-icon-menu"></i>
         <span slot="title">异情分析</span>
       </el-menu-item>
