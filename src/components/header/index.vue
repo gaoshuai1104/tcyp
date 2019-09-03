@@ -5,8 +5,9 @@
      <h3>汤臣一品欢迎您!</h3>
   </div>
   <el-menu
+  :default-active="$route.path"
     id="bg-top"
-    :default-active="activeIndex2"
+    router
     class="el-menu-demo"
     mode="horizontal"
     @select="handleSelect"
@@ -14,51 +15,51 @@
     text-color="#fff"
     active-text-color="#ffd04b"
   >
-      <el-submenu index="1">
-    <template slot="title"><i class="el-icon-s-cooperation" @click="$router.push({ path:'Admission'})"></i>平安住区</template>
-    <el-menu-item index="1-1">智慧门禁</el-menu-item>
-    <el-menu-item index="1-2">安防监控</el-menu-item>
-    <el-menu-item index="1-3">小区导引</el-menu-item>
-    <el-menu-item index="1-4">异情分析</el-menu-item>
-    <el-menu-item index="1-5">应急模拟</el-menu-item>
+    <el-submenu index="1">
+    <template slot="title"><i class="el-icon-s-cooperation"></i>平安住区</template>
+    <el-menu-item index="/Admission">智慧门禁</el-menu-item>
+    <el-menu-item index="/Security">安防监控</el-menu-item>
+    <el-menu-item index="/analyze">异情分析</el-menu-item>
+    <el-menu-item index="">小区导引</el-menu-item>
+    <el-menu-item index="">应急模拟</el-menu-item>
     </el-submenu>
       <el-submenu index="2">
     <template slot="title"><i class="el-icon-s-cooperation" @click="$router.push({ path:'Admission'})"></i>贵宾支持</template>
-    <el-menu-item index="2-1">到达提醒</el-menu-item>
-    <el-menu-item index="2-2">主动服务</el-menu-item>
+    <el-menu-item index="Arrive">到达提醒</el-menu-item>
+    <el-menu-item index="">主动服务</el-menu-item>
     </el-submenu>
     
           <el-submenu index="3">
     <template slot="title"><i class="el-icon-s-cooperation"></i>绿色住区</template>
-    <el-menu-item index="3-1">垃圾管理</el-menu-item>
-    <el-menu-item index="3-2">绿植管理</el-menu-item>
+    <el-menu-item index="">垃圾管理</el-menu-item>
+    <el-menu-item index="">绿植管理</el-menu-item>
     </el-submenu>
     <el-submenu index="4">
     <template slot="title"><i class="el-icon-s-cooperation"></i>资产管理</template>
-    <el-menu-item index="4-1">物业资产台账</el-menu-item>
-    <el-menu-item index="4-2">资产卡片</el-menu-item>
-    <el-menu-item index="4-3">资产空间分布</el-menu-item>
-    <el-menu-item index="4-4">资产查询盘点</el-menu-item>
-    <el-menu-item index="4-5">资产关联影响</el-menu-item>
-    <el-menu-item index="4-6">资产预算管理</el-menu-item>
-    <el-menu-item index="4-7">资产成本分析</el-menu-item>
+    <el-menu-item index="">物业资产台账</el-menu-item>
+    <el-menu-item index="">资产卡片</el-menu-item>
+    <el-menu-item index="">资产空间分布</el-menu-item>
+    <el-menu-item index="">资产查询盘点</el-menu-item>
+    <el-menu-item index="">资产关联影响</el-menu-item>
+    <el-menu-item index="">资产预算管理</el-menu-item>
+    <el-menu-item index="">资产成本分析</el-menu-item>
     </el-submenu>
     <el-submenu index="5">
     <template slot="title"><i class="el-icon-s-cooperation"></i>设备运维</template>
-    <el-menu-item index="5-1">设备状态指标</el-menu-item>
-    <el-menu-item index="5-2">故障维修</el-menu-item>
-    <el-menu-item index="5-3">计划性维护</el-menu-item>
-    <el-menu-item index="5-4">预防性维护</el-menu-item>
-    <el-menu-item index="5-5">设备维护电子档案</el-menu-item>
-    <el-menu-item index="5-6">运维费用统计</el-menu-item>
+    <el-menu-item index="">设备状态指标</el-menu-item>
+    <el-menu-item index="">故障维修</el-menu-item>
+    <el-menu-item index="">计划性维护</el-menu-item>
+    <el-menu-item index="">预防性维护</el-menu-item>
+    <el-menu-item index="">设备维护电子档案</el-menu-item>
+    <el-menu-item index="">运维费用统计</el-menu-item>
     </el-submenu>
     <el-submenu index="6">
     <template slot="title"><i class="el-icon-s-cooperation"></i>空间管理</template>
-    <el-menu-item index="6-1">空间创收</el-menu-item>
-    <el-menu-item index="6-2">空间清册</el-menu-item>
-    <el-menu-item index="6-3">空间查询</el-menu-item>
-    <el-menu-item index="6-4">空间占用</el-menu-item>
-    <el-menu-item index="6-4">费用分摊</el-menu-item>
+    <el-menu-item index="">空间创收</el-menu-item>
+    <el-menu-item index="">空间清册</el-menu-item>
+    <el-menu-item index="">空间查询</el-menu-item>
+    <el-menu-item index="">空间占用</el-menu-item>
+    <el-menu-item index="">费用分摊</el-menu-item>
     </el-submenu>
   </el-menu>
   </div>
@@ -160,5 +161,8 @@ export default {
       color: #42b983;
     }
   }
+}
+.rou{
+  height: 60px;
 }
 </style>

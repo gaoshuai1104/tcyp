@@ -12,7 +12,7 @@
       background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b">
-      <el-submenu index="1">
+      <!-- <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-menu"></i>
           <span>智慧门禁</span>
@@ -25,25 +25,25 @@
       <el-menu-item index="/information">访客信息</el-menu-item>
       </el-menu-item-group>
       </div>
-      </el-submenu>
+      </el-submenu> -->
 
-      <el-submenu index="/Security">
+      <!-- <el-submenu index="/Security">
         <template slot="title">
           <i class="el-icon-menu"></i>
           <span>安防监控</span>
         </template>
-        <div class="child">
+        <div class="child"> -->
             <!-- <el-menu-item-group>
       <el-menu-item index="/OrderApply" >输入采购订单</el-menu-item>
       <el-menu-item index="/Orderquery" >采购订单列表</el-menu-item>
       </el-menu-item-group> -->
-      </div>
-      </el-submenu>
+      <!-- </div>
+      </el-submenu> -->
       <!-- <el-menu-item disabled index="/Receivinggoods">
         <i class="el-icon-menu"></i>
         <span slot="title">收货管理</span>
       </el-menu-item> -->
-      <el-submenu index="/Guidance">
+      <!-- <el-submenu index="/Guidance">
         <template slot="title">
           <i class="el-icon-menu"></i>
           <span>小区导引</span>
@@ -54,14 +54,14 @@
       <el-menu-item index="/warehousingQuery" >查询采购入库</el-menu-item>
       </el-menu-item-group>
       </div>
-      </el-submenu>
-      <el-menu-item index="5">
+      </el-submenu> -->
+      <el-menu-item index="Arrive">
         <i class="el-icon-menu"></i>
-        <span slot="title">异情分析</span>
+        <span slot="title">到达提醒</span>
       </el-menu-item>
-      <el-menu-item index="6">
+            <el-menu-item index="">
         <i class="el-icon-menu"></i>
-        <span slot="title">应急模拟</span>
+        <span slot="title">主动服务</span>
       </el-menu-item>
       <!-- <el-menu-item index="7">
         <i class="el-icon-menu"></i>
@@ -96,14 +96,12 @@
 <style>
 .tac{
   top: 120px;
-  left: -20px;
+  left: -23px;
   position: fixed;
   background-color: rgb(84, 92, 100);
-  width: 160px;
+  height: 100%;
+  width: 140px;
 }
-/* .el-submenu__title,.el-menu-item{
-  width: 200px;
-} */
 .el-table td, .el-table th.is-leaf{
   border-bottom: 1px solid rgb(84, 92, 100);
   border-left: 1px solid rgb(84, 92, 100);
@@ -112,21 +110,11 @@
 .el-table{
   border: 1px solid rgb(84, 92, 100); 
 }
-.tac .el-menu-item-group__title{
-      background-color: rgb(84, 92, 100);
-}
-.child{
-  margin-left: 20px;
-}
-.el-submenu .el-menu-item,.el-submenu__title{
-  height: 30px;
-  line-height: 30px;
-  text-align: left;
-}
 .el-submenu .el-menu-item{
+  padding: 0;
   min-width: 140px;
 }
 .el-icon-arrow-down:before{
-  display: none;
+display: none;
 }
 </style>

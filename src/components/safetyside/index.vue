@@ -6,7 +6,7 @@
     :default-active="$route.path" router
     :collapse-transition=false
     default-openeds=[1]
-      class="el-menu-vertical-demo"
+      class="el-menu-demo"
       @open="handleOpen"
       @close="handleClose"
       background-color="#545c64"
@@ -15,38 +15,28 @@
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-menu"></i>
-          <span>智慧门禁</span>
+          智慧门禁
         </template>
-        <div class="child">
-      <el-menu-item-group>
-      <el-menu-item index="/Admission">入校登记</el-menu-item>
-      <el-menu-item index="/Leavingschool">离校登记</el-menu-item>
+      <el-menu-item index="/Admission">入园登记</el-menu-item>
+      <el-menu-item index="/Leavingschool">离园登记</el-menu-item>
       <el-menu-item index="/list">访客列表</el-menu-item>
       <el-menu-item index="/information">访客信息</el-menu-item>
-      </el-menu-item-group>
-      </div>
       </el-submenu>
-      <!-- <el-menu-item index="2">
-        <template slot="title">
-          <i class="el-icon-menu"></i>
-          <span>智慧门禁</span>
-        </template>
-      </el-menu-item> -->
       <el-menu-item index="/Security">
         <template slot="title">
           <i class="el-icon-menu"></i>
-          <span>安防监控</span>
+          安防监控
         </template>
-      </el-menu-item>
-            <el-menu-item index="/Guidance">
-        <i class="el-icon-menu"></i>
-        <span slot="title">小区导引</span>
       </el-menu-item>
       <el-menu-item index="/analyze">
         <i class="el-icon-menu"></i>
         <span slot="title">异情分析</span>
       </el-menu-item>
-      <el-menu-item index="6">
+      <el-menu-item index="">
+        <i class="el-icon-menu"></i>
+        <span slot="title">小区导引</span>
+      </el-menu-item>
+      <el-menu-item index="">
         <i class="el-icon-menu"></i>
         <span slot="title">应急模拟</span>
       </el-menu-item>
@@ -79,10 +69,8 @@
   position: fixed;
   background-color: rgb(84, 92, 100);
   height: 100%;
+  width: 140px;
 }
-/* .el-submenu__title,.el-menu-item{
-  width: 200px;
-} */
 .el-table td, .el-table th.is-leaf{
   border-bottom: 1px solid rgb(84, 92, 100);
   border-left: 1px solid rgb(84, 92, 100);
@@ -91,7 +79,17 @@
 .el-table{
   border: 1px solid rgb(84, 92, 100); 
 }
+.el-submenu .el-menu-item{
+  padding: 0;
+  min-width: 140px;
+}
 .el-icon-arrow-down:before{
 display: none;
+}
+.el-menu-item{
+  width: 140px;
+}
+.el-submenu.is-active .el-submenu__title{
+  width: 140px;
 }
 </style>

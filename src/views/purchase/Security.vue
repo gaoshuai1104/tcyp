@@ -1,76 +1,75 @@
 <template>
 <div class="af">
-<el-container>
-  <el-aside width="200px">
-        <el-col :span="24">
-         <el-menu
-      default-active="2"
-      class="el-menu-vertical-demo"
-      @open="handleOpen"
-      @close="handleClose">
-      <el-submenu index="1">
-        <template slot="title">
-          <i class="el-icon-location"></i>
-          <span>A栋区域</span>
-        </template>
-        <el-menu-item-group>
-          <el-menu-item index="1-1">A-1</el-menu-item>
-          <el-menu-item index="1-2">A-2</el-menu-item>
-          <el-menu-item index="1-1">A-3</el-menu-item>
-          <el-menu-item index="1-2">A-4</el-menu-item>
-        </el-menu-item-group>
-      </el-submenu>
-            <el-submenu index="2">
-        <template slot="title">
-          <i class="el-icon-location"></i>
-          <span>B栋区域</span>
-        </template>
-        <el-menu-item-group>
-          <el-menu-item index="2-1">B-1</el-menu-item>
-          <el-menu-item index="2-2">B-2</el-menu-item>
-          <el-menu-item index="2-1">B-3</el-menu-item>
-          <el-menu-item index="2-2">B-4</el-menu-item>
-        </el-menu-item-group>
-      </el-submenu>
-            <el-submenu index="3">
-        <template slot="title">
-          <i class="el-icon-location"></i>
-          <span>C栋区域</span>
-        </template>
-        <el-menu-item-group>
-          <el-menu-item index="3-1">C-1</el-menu-item>
-          <el-menu-item index="3-2">C-2</el-menu-item>
-          <el-menu-item index="3-1">C-3</el-menu-item>
-          <el-menu-item index="3-2">C-4</el-menu-item>
-        </el-menu-item-group>
-      </el-submenu>
-            <el-submenu index="4">
-        <template slot="title">
-          <i class="el-icon-location"></i>
-          <span>D栋区域</span>
-        </template>
-        <el-menu-item-group>
-          <el-menu-item index="4-1">D-1</el-menu-item>
-          <el-menu-item index="4-2">D-2</el-menu-item>
-          <el-menu-item index="4-1">D-3</el-menu-item>
-          <el-menu-item index="4-2">D-4</el-menu-item>
-        </el-menu-item-group>
-      </el-submenu>
-     
-    </el-menu>
-  </el-col>
-  </el-aside>
+  <safetyside></safetyside>
+  <div class="con">
   <el-container>
-    <el-header>汤臣一品接警中心</el-header>
-    <el-main id="lh">视频区</el-main>
-    <el-footer>报警原因： 检测到越界人员，请通知安保人员及时排查</el-footer>
+    <main class="color green" @click="rou">
+      <h3>外来人数</h3>
+      <div>
+        <ul>
+          <li>今日汇总：189</li>
+          <li>实时在园：76</li>
+          <li>已离园区：113</li>
+        </ul>
+      </div>
+    </main>
+    <el-main class="color red">
+      <h3>异常人数</h3>
+      <ul>
+        <li>总异常：19</li>
+        <li>已处理：17</li>
+        <li>未处理：2</li>
+      </ul>
+    </el-main>
+    <el-main class="color green">
+      <h3>设施监测</h3>
+      <div class="row">
+      <el-row>
+                <el-col :span="8">定位基站 :</el-col>
+                <el-col :span="4">6</el-col>
+                <el-col :span="4">正常</el-col>
+      </el-row>  
+      </div>
+      <div class="row">
+        <el-row>
+        <el-col :span="8">RFID卡 : </el-col>
+                <el-col :span="4">100</el-col>
+                <el-col :span="4">正常</el-col>
+      </el-row>
+      </div>
+    </el-main>
+    <el-main class="color red">
+      <h3>异常时间</h3>
+              <el-row>
+        <el-col :span="24">8:00~9:00 </el-col>
+      </el-row>
+                    <el-row>
+        <el-col :span="24">12:00~13:00</el-col>
+      </el-row>
+                    <el-row>
+        <el-col :span="24">17:00~18:00 </el-col>
+      </el-row>
+    </el-main>
   </el-container>
-</el-container>
+  </div>
 </div>
 </template>
 <script>
+import safetyside from '../../components/safetyside/index'
 export default {
-    
+    data() {
+      return {
+        
+      }
+    },
+    methods :{
+      rou (){
+          this.$router.push({name: 'list'})
+      }
+    },
+    components:{
+      safetyside
+    }
 }
 </script>
 <style lang="less" scoped>
@@ -80,14 +79,30 @@ export default {
     .af{
       margin-top: 50px;
     }
+    .con{
+      margin-left: 100px;
+    }
+    .color{
+      margin-right: 10px;
+    }
+    .green{
+      width: 20%;
+      border: 4px solid green;
+      border-radius: 8px;
+    }
+    .red{
+      border: 4px solid red;
+      border-radius: 8px;
+    }
+    .row{
+     padding-left: 80px;
+    }
+    li{
+      list-style-type: none;
+      text-align: left;
+    }
 </style>
 <style>
-  .el-header, .el-footer {
-    background-color: #B3C0D1;
-    color: #333;
-    text-align: center;
-    line-height: 60px;
-  }
   
   .el-aside {
     background-color: #D3DCE6;

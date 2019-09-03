@@ -1,5 +1,6 @@
 <template>
   <div>
+    <safetyside></safetyside>
     <div id="chart_example">
     </div>
     <span class="foot">近六个月内异情数量</span>
@@ -9,30 +10,20 @@
             <div id="main1" style="float:right;width:500px;height: 300px"></div>
         </div>
         <div id="pie2">
-            <div id="main2" style="float:right;width:500px;height: 300px"></div>
+            <div id="main2" style="float:right;"></div>
         </div>
-    </div>
-    <div class="inp">
-      <span class="fl">原因分析 :</span>
-      <div class="input">
-      <el-input
-  type="textarea"
-  :rows="3"
-  placeholder="请输入原因分析"
-  v-model="textarea">
-</el-input>
-<div class="but">
-  <el-button type="primary" round>提交</el-button>
-</div>
-      </div>
     </div>
   </div>
 </template>
 <script>
   import echarts from 'echarts'
+  import safetyside from "../../components/safetyside/index"
   export default {
     data() {
       return {}
+    },
+    components:{
+      safetyside
     },
     mounted() {
       this.initData();
@@ -102,11 +93,11 @@
                   radius : '55%',
                   center: ['50%', '60%'],
                   data:[
-                      {value:335, name:'误入管控区域'},
-                      {value:310, name:'跟随报警'},
-                      {value:234, name:'X报警'},
-                      {value:135, name:'XX警报'},
-                      {value:1548, name:'XXXX警报'}
+                      {value:15, name:'误入管控区域'},
+                      {value:7, name:'跟随报警'},
+                      {value:4, name:'X报警'},
+                      {value:8, name:'XX警报'},
+                      {value:9, name:'XXXX警报'}
                   ],
                   itemStyle: {
                       emphasis: {
@@ -128,9 +119,10 @@
 </script>
 <style lang="less" scoped>
   #chart_example{
-    width: 50%;
-    height: 500px;
+    width: 40%;
+    height: 400px;
     border: 1px solid red;
+    margin-left: 120px;
   }
   .pie{
     width: 300px;
