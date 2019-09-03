@@ -13,14 +13,6 @@
         </ul>
       </div>
     </main>
-    <el-main class="color red">
-      <h3>异常人数</h3>
-      <ul>
-        <li>总异常：19</li>
-        <li>已处理：17</li>
-        <li>未处理：2</li>
-      </ul>
-    </el-main>
     <el-main class="color green">
       <h3>设施监测</h3>
       <div class="row">
@@ -52,6 +44,36 @@
     </el-main>
   </el-container>
   </div>
+
+ <div class="bon">
+  <el-container>
+    <el-main class="color red">
+      <h3>误入管控区域</h3>
+      <ul>
+        <li>总异常：19</li>
+        <li>已处理：17</li>
+        <li>未处理：2</li>
+      </ul>
+    </el-main>
+    <el-main class="color green">
+      <h3>跟随进入</h3>
+      <ul>
+        <li>总异常：8</li>
+        <li>已处理：8</li>
+        <li>未处理：0</li>
+      </ul>
+    </el-main>
+    <el-main class="color red">
+        <ul>
+        <li>总异常：10</li>
+        <li>已处理：8</li>
+        <li>未处理：2</li>
+        </ul>
+    </el-main>
+  </el-container>
+  </div>
+
+
 </div>
 </template>
 <script>
@@ -81,6 +103,7 @@ export default {
     }
     .con{
       margin-left: 100px;
+      margin-bottom: 30px;
     }
     .color{
       margin-right: 10px;
@@ -100,6 +123,9 @@ export default {
     li{
       list-style-type: none;
       text-align: left;
+    }
+    .bon{
+      margin-left: 100px;
     }
 </style>
 <style>

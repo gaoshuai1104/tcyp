@@ -18,7 +18,7 @@
                 <li>被访人：XXX</li>
                 </ul>
 
-                <el-button type="success" plain>通知前台</el-button>
+                <el-button type="success" plain>通知住户</el-button>
             </div>
             <div class="num">
                 <h4>距当前</h4>
