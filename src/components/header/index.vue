@@ -1,7 +1,7 @@
 <template>
 <div>
   <div id="logo">
-    <img class="pty" src="../../../static/pty.jpg" alt="">
+    <img class="pty" src="../../../static/pty.png" alt="">
      <h3>汤臣一品欢迎您!</h3>
   </div>
   <el-menu
@@ -134,8 +134,7 @@ export default {
   }
 }
 .pty{
-  width: 90px;
-  height: 50px;
+  height: 40px;
   float: left;
 }
 .righ{

@@ -64,6 +64,7 @@
       </ul>
     </el-main>
     <el-main class="color red">
+      <h3>逗留时间异常</h3>
         <ul>
         <li>总异常：10</li>
         <li>已处理：8</li>
@@ -122,7 +123,7 @@ export default {
     }
     li{
       list-style-type: none;
-      text-align: left;
+      text-align: center;
     }
     .bon{
       margin-left: 100px;
