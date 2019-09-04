@@ -161,6 +161,15 @@ export default new Router({
           },
         },
         {
+          path: '/Guidance',
+          name: 'Guidance',
+          component: () => import('./views/purchase/Guidance.vue'),
+          meta:{
+            keepAlive: true,
+            title:'小区导引',
+          },
+        },
+        {
           path: '/Arrive',
           name: 'Arrive',
           component: () => import('./views/purchase/Arrive.vue'),

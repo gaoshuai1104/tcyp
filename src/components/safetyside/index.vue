@@ -17,8 +17,8 @@
           <i class="el-icon-menu"></i>
           智慧门禁
         </template>
-      <el-menu-item index="/Admission">入园登记</el-menu-item>
-      <el-menu-item index="/Leavingschool">离园登记</el-menu-item>
+      <el-menu-item index="/Admission">访客登记</el-menu-item>
+      <!-- <el-menu-item index="/Leavingschool">离园登记</el-menu-item> -->
       <el-menu-item index="/list">访客列表</el-menu-item>
       <el-menu-item index="/information">访客信息</el-menu-item>
       </el-submenu>
@@ -32,7 +32,7 @@
         <i class="el-icon-menu"></i>
         <span slot="title">异情分析</span>
       </el-menu-item>
-      <el-menu-item index="">
+      <el-menu-item index="Guidance">
         <i class="el-icon-menu"></i>
         <span slot="title">小区导引</span>
       </el-menu-item>

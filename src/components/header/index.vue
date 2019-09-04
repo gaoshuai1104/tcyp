@@ -2,7 +2,7 @@
 <div>
   <div id="logo">
     <img class="pty" src="../../../static/pty.png" alt="">
-     <h3>汤臣一品欢迎您!</h3>
+     <h3>XXX &nbsp;下午好!</h3>
   </div>
   <el-menu
   :default-active="$route.path"
@@ -20,7 +20,7 @@
     <el-menu-item index="/Admission">智慧门禁</el-menu-item>
     <el-menu-item index="/Security">安防监控</el-menu-item>
     <el-menu-item index="/analyze">异情分析</el-menu-item>
-    <el-menu-item index="">小区导引</el-menu-item>
+    <el-menu-item index="/Guidance">小区导引</el-menu-item>
     <el-menu-item index="">应急模拟</el-menu-item>
     </el-submenu>
       <el-submenu index="2">
@@ -129,7 +129,7 @@ export default {
   width: 100%;
   h3{
     float: right;
-    margin-right: 40px;
+    margin-right: 60px;
     line-height: 10px;
   }
 }

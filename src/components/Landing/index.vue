@@ -4,7 +4,7 @@
       <img src="../../../static/timg.jpg" class />
     </div>
     <div class="right">
-      <h2>汤臣一品 BIM.FM运营管理平台</h2>
+      <h2>汤臣一品智慧主区运营服务平台</h2>
       <!-- <span>BIM.FM运营管理平台</span> -->
       <div class="user">
         <el-input placeholder="请输入用户名" v-model="username" clearable></el-input>
@@ -13,7 +13,7 @@
       <div class="checked">
         <el-checkbox v-model="checked">记住我</el-checkbox>
       </div>
-      <button class="but" @click="lond">登陆</button>
+      <button class="but" @click="lond">登录</button>
       <!-- <span>@Arcplus Surbana Jurong Digital Ltd</span> -->
     </div>
   </div>
@@ -72,6 +72,8 @@ export default {
     border-radius: 8px;
     border: none;
     margin-bottom: 30px;
+    font-size: 20px;
+    color: #fff;
   }
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
     <div class="bg">
+      <safetyside></safetyside>
         <el-col :span="8">
     <!-- <el-autocomplete
       class="inline-input"
@@ -9,7 +10,8 @@
       :trigger-on-focus="false"
       @select="handleSelect"
     ></el-autocomplete> -->
-  </el-col>
+    </el-col>
+<div class="inp">
   <el-col :span="8">
     <el-autocomplete
       class="inline-input"
@@ -20,6 +22,8 @@
       @select="handleSelect"
     ></el-autocomplete>
   </el-col>
+</div>
+  
   <el-button type="info" icon="el-icon-search">搜索</el-button>
 
 <div class="im">
@@ -28,6 +32,7 @@
     </div>
 </template>
 <script>
+import safetyside from '../../components/safetyside/index'
 export default {
     data() {
       return {
@@ -35,6 +40,9 @@ export default {
         state1: '',
         state2: ''
       };
+    },
+    components:{
+      safetyside,
     },
     methods: {
       querySearch(queryString, cb) {
@@ -73,5 +81,12 @@ export default {
     }
     .im{
       margin-top: 30px;
+      margin-left: 5%;
+      img{
+        height: 600px;
+      }
+    }
+    .inp{
+      margin-left: 30%;
     }
 </style>

@@ -31,7 +31,7 @@
       </div>
     </el-main>
     <el-main class="color red">
-      <h3>异常时间</h3>
+      <h3>异常时段</h3>
               <el-row>
         <el-col :span="24">8:00~9:00 </el-col>
       </el-row>
@@ -55,7 +55,7 @@
         <li>未处理：2</li>
       </ul>
     </el-main>
-    <el-main class="color green">
+    <el-main class="color red">
       <h3>跟随进入</h3>
       <ul>
         <li>总异常：8</li>
